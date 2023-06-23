@@ -1,3 +1,4 @@
+/* Para la demo se centra el html y el body */
 html, body {
   height: 100%;
 }
@@ -11,25 +12,26 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+/* Para la demo se centra el contenido del html y el body */
+
 .magicBtn--text {
   font-size: 14px;
   font-weight: 400;
 }
 
-.magicBtn--magicIcon {
+/* tamaño SM de los iconos */
+.magicBtn--magicIcon, .magicBtn--doneIcon, .magicBtn--loaderIcon  {
   height: 20px;
 }
 
-.magicBtn--loaderIcon {
-  height: 20px;
+/* asignación de la animación del loader */
+.magicBtn--loaderIcon{
   animation: spinLoader 1s ease infinite;
 }
 
-.magicBtn--doneIcon {
-  height: 20px;
-}
-
+/* Botón */
 .magicBtn {
+  /* Ancho fijo */
   width: 170px;
   display: flex;
   align-items: center;
@@ -43,23 +45,28 @@ body {
   transition: background-color 0.3s ease;
 }
 
+/* btn estado loading */
 .magicBtn--status__loader {
   color: #7A7A7A;
   background-color: #F8F8F8;
   border: 1px solid #CBCBCB;
 }
 
+/* btn estado done */
 .magicBtn--status__done {
+  justify-content: center;
   color: #ffff;
   background-color: #68BB59;
   border: 1px solid #68BB59;
 }
 
+ /* Efecto hover */
 .magicBtn:hover {
   cursor: pointer;
   background-color: #D9CEFF;
 }
 
+/* clase para ocultar */
 .none {
   display: none;
 }
