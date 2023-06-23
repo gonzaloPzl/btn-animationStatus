@@ -1,0 +1,76 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.magicBtn--text {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.magicBtn--magicIcon {
+  height: 20px;
+}
+
+.magicBtn--loaderIcon {
+  height: 20px;
+  animation: spinLoader 1s ease infinite;
+}
+
+.magicBtn--doneIcon {
+  height: 20px;
+}
+
+.magicBtn {
+  width: 170px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #F3F1FF;
+  color: #6B04FD;
+  padding: 10px 20px 10px 16px;
+  border-radius: 6px;
+  border: 1px solid #6B04FD;
+  /*Transición para el hover*/
+  transition: background-color 0.3s ease;
+}
+
+.magicBtn--status__loader {
+  color: #7A7A7A;
+  background-color: #F8F8F8;
+  border: 1px solid #CBCBCB;
+}
+
+.magicBtn--status__done {
+  color: #ffff;
+  background-color: #68BB59;
+  border: 1px solid #68BB59;
+}
+
+.magicBtn:hover {
+  cursor: pointer;
+  background-color: #D9CEFF;
+}
+
+.none {
+  display: none;
+}
+
+/*Animación del loader*/
+
+@keyframes spinLoader {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
